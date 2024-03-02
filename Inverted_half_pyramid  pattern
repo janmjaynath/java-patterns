@@ -1,0 +1,19 @@
+public class Inverted_half_pyramid {
+    public static void pyramid(int n) {
+        for(int i = 1; i<=n; i++){        //rows
+            for(int j = 1; j<=n-i; j++){
+                System.out.print(" ");   //spaces
+             }
+        
+            for(int k = 1; k<=i; k++){    // stars
+                System.out.print("*");
+            }
+            System.out.println();
+            }
+
+        
+    }
+    public static void main(String[] args) {
+        pyramid(4);
+    }
+}
